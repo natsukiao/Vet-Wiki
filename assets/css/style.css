@@ -111,3 +111,42 @@ li a:hover{
 .icon{
     font-size:55px;
 }
+
+.container{
+    display:flex;
+    min-height:100vh;
+}
+
+.sidebar{
+    width:250px;
+    background:#1976d2;
+    color:white;
+    padding:25px;
+}
+
+.sidebar h2{
+    margin-bottom:30px;
+}
+
+.sidebar nav{
+    display:flex;
+    flex-direction:column;
+}
+
+.sidebar a{
+    color:white;
+    text-decoration:none;
+    padding:12px;
+    border-radius:8px;
+    margin-bottom:8px;
+    transition:.2s;
+}
+
+.sidebar a:hover{
+    background:rgba(255,255,255,.2);
+}
+
+.content{
+    flex:1;
+    padding:30px;
+}
