@@ -1,19 +1,29 @@
 const search = document.getElementById("search");
+const results = document.getElementById("search-results");
 
-search.addEventListener("keyup", function () {
+search.addEventListener("input", function(){
 
-    const word = search.value.toLowerCase();
+const keyword = this.value.toLowerCase();
 
-    const links = document.querySelectorAll("li");
+results.innerHTML="";
 
-    links.forEach(item => {
+if(keyword==="") return;
 
-        if(item.innerText.toLowerCase().includes(word)){
-            item.style.display="list-item";
-        }else{
-            item.style.display="none";
-        }
+articles.forEach(article=>{
 
-    });
+if(article.title.toLowerCase().includes(keyword)){
+
+results.innerHTML += `
+<div class="result">
+<a href="${article.url}">
+${article.title}
+</a>
+<span>${article.category}</span>
+</div>
+`;
+
+}
+
+});
 
 });

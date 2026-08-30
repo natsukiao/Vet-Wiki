@@ -150,3 +150,35 @@ li a:hover{
     flex:1;
     padding:30px;
 }
+
+#search-results{
+
+margin-top:20px;
+
+}
+
+.result{
+
+padding:10px;
+
+border-bottom:1px solid #ddd;
+
+}
+
+.result a{
+
+font-weight:bold;
+
+text-decoration:none;
+
+}
+
+.result span{
+
+margin-left:10px;
+
+color:gray;
+
+font-size:14px;
+
+}
