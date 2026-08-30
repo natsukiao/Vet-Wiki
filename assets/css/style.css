@@ -82,3 +82,32 @@ li a{
 li a:hover{
     text-decoration:underline;
 }
+
+.card{
+    background:white;
+    border-radius:18px;
+    padding:25px;
+    text-decoration:none;
+    color:#333;
+    box-shadow:0 6px 18px rgba(0,0,0,.1);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 12px 30px rgba(0,0,0,.18);
+}
+
+.card h3{
+    margin:10px 0;
+    color:#1976d2;
+}
+
+.card p{
+    color:#666;
+    font-size:15px;
+}
+
+.icon{
+    font-size:55px;
+}
